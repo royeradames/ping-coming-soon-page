@@ -1,0 +1,12 @@
+.layout{
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+        "header" 5.6rem
+        "launching" 44.8rem
+        "footer" 19rem
+        / 32rem
+    ;
+    justify-content: center;
+    align-content: center;
+}
