@@ -68,15 +68,21 @@ function App() {
       </main>
       <footer className="footer">
         <article className="socials footer__socials">
-          <div className="footer__socials-icon">
-            <FontAwesomeIcon icon={faFacebookF} className="facebook" />
-          </div>
-          <div className="footer__socials-icon">
-            <FontAwesomeIcon icon={faTwitter} className="twitter" />
-          </div>
-          <div className="footer__socials-icon">
-            <FontAwesomeIcon icon={faInstagram} className="instagram" />
-          </div>
+          <a href="#root">
+            <div className="footer__socials-icon">
+              <FontAwesomeIcon icon={faFacebookF} className="facebook" />
+            </div>
+          </a>
+          <a href="#root">
+            <div className="footer__socials-icon">
+              <FontAwesomeIcon icon={faTwitter} className="twitter" />
+            </div>
+          </a>
+          <a href="#root">
+            <div className="footer__socials-icon">
+              <FontAwesomeIcon icon={faInstagram} className="instagram" />
+            </div>
+          </a>
         </article>
         <p className="footer__copy-right">
           &copy; Copyright Ping. All rights reserved.
