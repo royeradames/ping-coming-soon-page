@@ -1,3 +1,5 @@
+$bg: 1440px;
+
 .layout{
     min-height: 100vh;
     display: grid;
@@ -9,4 +11,13 @@
     ;
     justify-content: center;
     align-content: center;
+
+    @media(min-width: $bg){
+        grid-template:
+            "header" 9rem
+            "launching" 67.3rem
+            "footer" 20.4rem
+            / 71.2rem
+        ;
+    }
 }
