@@ -1,0 +1,16 @@
+$bg: 1440px;
+.header{
+    grid-area: header;
+    justify-self: center;
+    &__logo{
+        font-weight: bold;
+        font-size: 2rem;
+
+        @media(min-width: $bg){
+            font-size: 3.2rem;
+        }
+        &--blue{
+            color: var(--color-blue-400);
+        }
+    }
+}
