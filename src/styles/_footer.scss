@@ -1,0 +1,25 @@
+$bg: 1440px;
+
+.footer{
+    grid-area: footer;
+    justify-self: center;
+    text-align: center;
+    &__socials{
+        margin: 12rem 0 2.7rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        &-icon{
+            height: 3.1rem;
+            width: 3.2rem;
+            border: solid .092rem rgb(76, 123, 243, 15%);
+            border-radius: 50%;
+            color: var(--color-blue-400);
+
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            
+        }
+    }
+}

@@ -43,8 +43,8 @@ function App() {
         </p>
       </header>
       <main className="launching">
-        <h1 className="h1 launching__logo">
-          We are launching <span className="launching__logo--bold">soon!</span>
+        <h1 className="h1 launching__title">
+          We are launching <span className="launching__title--bold">soon!</span>
         </h1>
         <p className="launching__subtext">Subscribe and get notified</p>
         <form className="launching__form" onSubmit={handleSubmit(onSubmit)}>
@@ -69,13 +69,13 @@ function App() {
       <footer className="footer">
         <article className="socials footer__socials">
           <div className="footer__socials-icon">
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faFacebookF} className="facebook" />
           </div>
           <div className="footer__socials-icon">
-            <FontAwesomeIcon icon={faFacebookF} />
+            <FontAwesomeIcon icon={faTwitter} className="twitter" />
           </div>
           <div className="footer__socials-icon">
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} className="instagram" />
           </div>
         </article>
         <p className="footer__copy-right">
