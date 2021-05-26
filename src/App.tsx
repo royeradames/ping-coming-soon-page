@@ -39,7 +39,9 @@ function App() {
   return (
     <>
       <header className="header">
-        <img src={logo} alt="Ping logo" className="header__logo" />
+        <p className="header__logo">
+          PING<span className="header__logo--blue">.</span>
+        </p>
       </header>
       <main className="launching">
         <h1 className="h1 launching__logo">
