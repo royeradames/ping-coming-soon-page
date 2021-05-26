@@ -15,7 +15,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 // imgs
-import logo from "./images/logo.svg";
 import illustrationDashboard from "./images/illustration-dashboard.png";
 
 // form-validation
