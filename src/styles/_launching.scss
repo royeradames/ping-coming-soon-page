@@ -59,6 +59,7 @@ $bg: 1440px;
             line-height: 1.6rem;
             box-shadow: 0 .5rem 1rem .2rem rgb(76, 123, 243, 23.04%);
             width: 100%;
+            cursor: pointer;
 
             @media(min-width: $bg){
                 width: 20rem;
