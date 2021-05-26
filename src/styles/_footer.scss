@@ -20,6 +20,10 @@ $bg: 1440px;
             justify-items: center;
             align-items: center;
             
+            &:hover{
+                background-color: var(--color-blue-400);
+                color: white;
+            }
         }
     }
 }
