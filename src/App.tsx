@@ -56,8 +56,11 @@ function App() {
             placeholder="Your email adress..."
           />
           <p className="launching__form-error ">
-            {errors.email?.message
+            {errors.email?.type === "required"
               ? "Whoops! It looks like you forgot to add your email"
+              : ""}
+            {errors.email?.type === "email"
+              ? "Please provide a valid email address"
               : ""}
           </p>
           <button className="btn launching__form-btn">Notify Me</button>
