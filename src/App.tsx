@@ -50,10 +50,12 @@ function App() {
         <form className="launching__form" onSubmit={handleSubmit(onSubmit)}>
           <input
             {...register("email")}
-            className="launching__form-input"
+            className={`launching__form-input ${
+              errors.email?.message ? "launching__form-input-error" : ""
+            }`}
             placeholder="Your email adress..."
           />
-          <p>
+          <p className="launching__form-error ">
             {errors.email?.message
               ? "Please provide a valid email address"
               : ""}

@@ -1,7 +1,12 @@
-$bg: 1440px;
+$bg: 800px;
+// $bg: 1440px;
 .header{
     grid-area: header;
     justify-self: center;
+    margin-top: 8rem;
+    @media(min-width: $bg){
+            margin-top: 8rem;
+        }
     &__logo{
         font-weight: bold;
         font-size: 2rem;

@@ -1,4 +1,5 @@
-$bg: 1440px;
+$bg: 800px;
+// $bg: 1440px;
 
 .launching{
     grid-area: "launching";
@@ -33,9 +34,15 @@ $bg: 1440px;
     &__form{
         margin-bottom: 7.2rem;
         @media(min-width: $bg){
-            display: flex;
+            display: grid;
+            grid-template:
+                "input button" 1fr
+                "error error" 1fr
+                / 3fr 1fr
+            ;
+            column-gap: 1.6rem;
             justify-content: space-between;
-            margin-bottom: 9.4rem;
+            margin-bottom: 6.8rem;
         }
         &-input{
             width: 100%;
@@ -43,11 +50,28 @@ $bg: 1440px;
             border: .1rem solid var(--color-blue-100);
             padding: 1rem 3.2rem;
             color: #B8C7ED;
+            font-weight: 300;
+            font-size: 1.2rem;
+            font-family: inherit;
 
             @media(min-width: $bg){
-                width: 42.1rem;
+                font-size: 1.6rem;
+            }
+
+            &-error{
+                border-color: var(--color-red);
             }
         }
+        &-error{
+            color: var(--color-red);
+
+            @media(min-width: $bg){
+                grid-area: error;
+                text-align: left;
+                margin: .6rem 0 0 3rem;
+            }
+        }
+        
         &-btn{
             margin-top: 1rem;
             padding: 1.2rem 11.25rem;
@@ -60,10 +84,15 @@ $bg: 1440px;
             box-shadow: 0 .5rem 1rem .2rem rgb(76, 123, 243, 23.04%);
             width: 100%;
             cursor: pointer;
+            font-weight: 600;
+            font-family: inherit;
 
             @media(min-width: $bg){
                 width: 20rem;
                 margin-top: 0;
+                font-size: 1.6rem;
+                grid-area: button;
+                padding: 1.8rem 6.2rem;
             }
         }
     }
