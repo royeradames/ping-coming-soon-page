@@ -57,7 +57,7 @@ function App() {
           />
           <p className="launching__form-error ">
             {errors.email?.message
-              ? "Please provide a valid email address"
+              ? "Whoops! It looks like you forgot to add your email"
               : ""}
           </p>
           <button className="btn launching__form-btn">Notify Me</button>
