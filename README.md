@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Ping-coming-soon-page](http://ping-coming-soon-page-virid.vercel.app/)
+- Live Site URL: [Ping-coming-soon-page](https://royer-adames-ping-coming-soon.vercel.app/)
 
 ## My process
 
